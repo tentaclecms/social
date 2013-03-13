@@ -29,9 +29,20 @@ class social {
         if ( IS_POST ): ?>
         <script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=3.5'></script>
         <script type='text/javascript' src='http://apis.google.com/js/plusone.js?ver=3.5'></script>
-        <div class="bottomcontainerBox" style="">
+        <div class="bottomcontainerBox">
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=109400307719";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
             <div style="float:left; width:85px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
-                <iframe src="http://www.facebook.com/plugins/like.php?href=<?= urlencode(HISTORY) ?>&amp;layout=button_count&amp;show_faces=false&amp;width=85&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:85px; height:21px;"></iframe></div>
+                <div class="fb-like" data-href="<?=HISTORY ?>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+            </div>
             <div style="float:left; width:85px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
                 <g:plusone size="medium" href="<?= HISTORY ?>"></g:plusone>
             </div>
