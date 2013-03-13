@@ -5,7 +5,7 @@
                 <div class="title pad-right">
                     <h1><img src="<?=ADMIN_URL;?>images/icons/icon_pages_32.png" alt="" /> Social Sharing Settings</h1>
                     <div class="span8 well">
-                        <p>Choose what services that you would like your views to share with.</p>
+                        <p>Choose what services you would like your views to share with.</p>
 
                         <?
                         if ( input::post('author_profile') )
@@ -14,24 +14,26 @@
 
                         <form action="<?= HISTORY ?>" method="post" class="form-stacked">
 
-                            <input type="hidden" name="history" value="admin/settings_plugins/analytic_settings">
+                            <input type="hidden" name="history" value="admin/settings_plugins/social_settings">
 
                             <fieldset>
 
                                 <div class="control-group">
-                                    <label class="control-label" for="blogname">Tracking Code</label>
                                     <div class="controls">
                                         <label class="checkbox inline">
-                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                                            <input type="checkbox" id="social_facebook" value="facebook" name="social_sharing" /> Facebook
                                         </label>
                                         <label class="checkbox inline">
-                                            <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                                            <input type="checkbox" id="social_google" value="google_plus" name="social_sharing" /> Google+
                                         </label>
                                         <label class="checkbox inline">
-                                            <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                                            <input type="checkbox" id="social_twitter" value="twitter" name="social_sharing" /> Twitter
+                                        </label>
+                                        <label class="checkbox inline">
+                                            <input type="checkbox" id="social_stumble" value="stumbleupon" name="social_sharing" /> Stumbleupon
                                         </label>
 
-                                        <?= get::option('tracking_code', '') ?>
+                                        <?= get::option('social_sharing', '') ?>
                                     </div>
                                 </div>
 
