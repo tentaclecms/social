@@ -1,4 +1,4 @@
-social
+Social
 ======
 
 Social sharing
