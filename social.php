@@ -56,7 +56,7 @@ class social {
                 <script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=3.5'></script>
                 <div style="float:left; width:85px;padding-right:10px; margin:4px 4px 4px 4px;height:30px;">
                     <!-- <a href="http://twitter.com/share" class="twitter-share-button" data-url="--><?//= HISTORY ?><!--"  data-text="test" data-count="horizontal" data-via="adampatterson"></a>-->
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-url="<?= HISTORY ?>"  data-count="horizontal"></a>
+                    <a href="http://twitter.com/share" class="twitter-share-button" data-url="<?= HISTORY ?>"  data-count="horizontal" <? if ( get::option('social_twitter_name') != '' ) echo 'data-via="'.get::option('social_twitter_name').'"';?>></a>
                 </div>
             <? endif; ?>
 

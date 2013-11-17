@@ -20,22 +20,23 @@
 
                                 <div class="control-group">
                                     <div class="controls">
-                                        <label class="checkbox inline">
+                                        <label class="checkbox ">
                                             <input type="hidden" id="social_facebook" value="" name="social_facebook" />
                                             <input type="checkbox" <? if ( get::option('social_facebook') != ''): echo 'checked'; endif; ?> id="social_facebook" value="facebook" name="social_facebook" /> Facebook
                                         </label>
-                                        <label class="checkbox inline">
+                                        <label class="checkbox ">
                                             <input type="hidden" id="social_google" value="" name="social_google" />
                                             <input type="checkbox" <? if ( get::option('social_google') != ''): echo 'checked'; endif; ?> id="social_google" value="google_plus" name="social_google" /> Google+
                                         </label>
-                                        <label class="checkbox inline">
-                                            <input type="hidden" id="social_twitter" value="" name="social_twitter" />
-                                            <input type="checkbox" <? if ( get::option('social_twitter') != ''): echo 'checked'; endif; ?> id="social_twitter" value="twitter" name="social_twitter" /> Twitter
-                                        </label>
-                                        <label class="checkbox inline">
+                                        <label class="checkbox ">
                                             <input type="hidden" id="social_stumble" value="" name="social_stumble" />
                                             <input type="checkbox" <? if ( get::option('social_stumble') != ''): echo 'checked'; endif; ?> id="social_stumble" value="stumbleupon" name="social_stumble" /> Stumbleupon
                                         </label>
+                                        <label class="checkbox ">
+                                            <input type="hidden" id="social_twitter" value="" name="social_twitter" />
+                                            <input type="checkbox" <? if ( get::option('social_twitter') != ''): echo 'checked'; endif; ?> id="social_twitter" value="twitter" name="social_twitter" /> Twitter
+                                        </label>
+                                        <input type="text" id="social_twitter_name" value="<?= get::option('social_twitter_name') ?>" name="social_twitter_name" placeholder="Twitter handle without @" />
                                     </div>
                                 </div>
 
