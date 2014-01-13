@@ -3,7 +3,7 @@
 name: Social Media
 url: http://adampatterson.ca/
 version: 1.0
-description: Social media sharing
+description: Social sharing
 author:
    name: Adam Patterson
    url: http://adampatterson.ca/
